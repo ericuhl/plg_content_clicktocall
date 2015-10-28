@@ -34,14 +34,20 @@ class plgContentClicktocall extends JPlugin
 		//if everything checks out, then run the clickToCall function
 		return $this->clickToCall($row, $params);
 	}
-
 	protected function clickToCall(&$text, &$params){
-		// matches 4 numbers followed by an optional hyphen or space,
-		// then followed by 4 numbers.
-		// phone number is in the form XXXX-XXXX or XXXX XXXX
-		$pattern = '/(\W[0-9]{4})-? ?(\W[0-9]{4})/';
-		$replacement = '<a href="tel:$1$2">$1$2</a>';
+		// phone number pattern....
+		$pattern = '~(\+0?1\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}~';
+		//replacement pattern...
+		$replacement = '<a href="tel:$1$2$3$4">$1$2$3$4</a>';
+		//use preg_replace to actually replace the pattern
 		$text = preg_replace($pattern, $replacement, $text);
+		//return the new value
 		return true;
 	}
 }
+
+
+
+
+
+

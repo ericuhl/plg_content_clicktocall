@@ -21,22 +21,5 @@
 		<filename>index.html</filename>
 	</files>
 
-	<config>
-		<fields name="params">
-			<fieldset name="basic">
-			<field name="phoneDigits1" type="text"
-				default="4"
-				label="Digits 1"
-				description="How many digits in the first part of the
-				phone number?"
-				/>
-			<field name="phoneDigits2" type="text"
-				default="4"
-				label="Digits 2"
-				description="How many digits in the second part of the
-				phone number?"
-				/>
-			</fieldset>
-		</fields>
-	</config>
+	
 </extension>
