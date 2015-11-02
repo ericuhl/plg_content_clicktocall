@@ -34,11 +34,8 @@ class plgContentClicktocall extends JPlugin
 		return $this->clickToCall($row, $params);
 	}
 	protected function clickToCall(&$text, &$params){
-		$phone1digit1 = $this->params->get('phone1digit1', 3);
-		$phone1digit2 = $this->params->get('phone1digit2', 3);
-		$phone1digit3 = $this->params->get('phone1digit3', 4);
 		// phone number pattern....
-		$pattern = '~(\+?\d?\d?)\s?\(?(\d{'.$phone1digit1.'})\)?[\s.-](\d{'.$phone1digit2.'})[\s.-](\d{'.$phone1digit3.'})~';
+		$pattern = '~(\+?\d?\d?)\s?\(?(\d{3})\)?[\s.-](\d{3})[\s.-](\d{4})~';
 		//replacement pattern...
 		$replacement = '<a href="tel:$1 $2 $3 $4">$1 ($2) $3-$4</a>';
 		//use preg_replace to actually replace the pattern
