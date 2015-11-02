@@ -11,9 +11,8 @@
 	<license>none</license>
 	<authorEmail>yearright@upyours.com</authorEmail>
 	<authorUrl>www.notgettingmysiteaddresseither.com</authorUrl>
-	<version>1.1.0</version>
-	<description>This plugin will replace phone numbers with click
-	to call links. Requires Joomla! 3.0 or greater.
+	<version>1.2.0</version>
+	<description>This plugin will replace phone numbers with click to call links. Requires Joomla! 3.0 or greater.
 	</description>
 	
 	<files>
@@ -44,4 +43,4 @@
 			</fieldset>
 		</fields>
 	</config>
-</extension>
+</extension> 

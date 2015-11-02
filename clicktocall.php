@@ -22,8 +22,7 @@ class plgContentClicktocall extends JPlugin
 		parent::__construct( $subject, $params );
 	}
 	//Before Joomla outputs the content....
-	public function onContentPrepare($context, &$row, &$params, $page = 0)
-	{
+	public function onContentPrepare($context, &$row, &$params, $page = 0){
 		// Do not run this plugin when the content is being indexed
 		if ($context == 'com_finder.indexer'){
 			return true;
