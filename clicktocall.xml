@@ -24,20 +24,20 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="phoneDigits1" type="text"
+				<field name="phone1digit1" type="text"
 					default="3"
 					label="Area Code"
 					description="How many digits in the area code number?"
 					/>
-				<field name="phoneDigits2" type="text"
+				<field name="phone1digit2" type="text"
 					default="3"
 					label="Digits 1"
 					description="How many digits in the first part of the
 					phone number?"
 					/>
-				<field name="phoneDigits3" type="text"
+				<field name="phone1digit3" type="text"
 					default="4"
-					label="Digits 3"
+					label="Digits 2"
 					description="How many digits in the second part of the
 					phone number?"
 					/>
