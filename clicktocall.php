@@ -2,7 +2,6 @@
 
 /**
 * ClickToCall Content Plugin
-*
 * @package Joomla.Plugin
 * @subpackage Content.clicktocall
 * @since 3.0
